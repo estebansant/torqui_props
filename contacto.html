@@ -4,15 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contacto.css" />
     <title>Contacto | Torqui Propiedades</title>
 </head>
 <body>
     <main>
-        <section>
+        <section class="form__section">
+            <!-- Formulario -->
+            <form class="form">
+                <div class="form__wrapper">
+                    <div class="form__wrapper--container">
+                        <h1 class="form__title">CONOCÉ EL VALOR DE TU PROPIEDAD</h1>
+                        <h2  class="form__subtitle">Contáctanos para recibir la mejor tasación del mercado.</h2>
 
+                        <!-- Campos del formulario -->
+                        <div class="form__container">
+                            <label for="fname" class="form__container--label">
+                                <span class="form__container--label__title">Nombre*</span>
+                                <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre" required class="form__container--label__name"/>
+                            </label>
+                            <label for="lname" class="form__container--label">
+                                <span class="form__container--label__title">Apellido*</span>
+                                <input type="text" id="lname" name="lname" placeholder="Introduce tu apellido" required class="form__container--label__name"/>
+                            </label>
+                        </div>
+                        <div class="form__container">
+                            <label for="email" class="form__container--label">
+                                <span class="form__container--label__title">Email*</span>
+                                <input type="mail" id="email" name="email" placeholder="Introduce tu email" required class="form__container--label__contact"/>
+                            </label>
+                            <label for="phone" class="form__container--label">
+                                <span class="form__container--label__title">Teléfono*</span>
+                                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required class="form__container--label__contact"/>
+                            </label>
+                        </div>
+                        <label for="message" class="form__container--label2">
+                            <span class="form__container--label__title">Mensaje*</span>
+                            <textarea id="message" name="message" placeholder="Introduce tu mensaje" required class="form__container--label__message"></textarea>
+                        </label>
+                        <div class="submit__wrapper">
+                            <input class="submit" type="submit" value="Enviar"/>
+                        </div>
+                        <div class="social">
+                            <a href="https://api.whatsapp.com/send?phone=5491162757459" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/icons/whatsapp.png" alt="whatsapp icon"/>
+                            </a>
+                            <a href="https://www.instagram.com/torquipropiedades/" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/icons/instagram.png" alt="instagram icon"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </section>
-        <section>
-            <h2>TE CONECTAMOS CON <b>EL PRÓXIMO DUEÑO.</b></h2>
+        <section class="info">
+            <!-- Información -->
+            <h2 class="info__title">TE CONECTAMOS CON <b>EL PRÓXIMO DUEÑO.</b></h2>
+            <div class="info__container">
+                <!-- Iconos -->
+                <div class="info__container--card">
+                    <img src="src/icons/coin.png" alt="mano con una moneda icono" class="info__container--card__image"/>
+                    <h3 class="info__container--card__title">Servicio de tasación</h3>
+                    <p class="info__container--card__text">Coordinamos una visita a tu propiedad para conocer su valor.</p>
+                </div>
+                <hr />
+                <div class="info__container--card">
+                    <img src="src/icons/camera.png" alt="camara de fotos icono" class="info__container--card__image"/>
+                    <h3 class="info__container--card__title">Fotos y redacción</h3>
+                    <p class="info__container--card__text">Creamos un aviso atractivo desde su imagen y descripción.</p>
+                </div>
+                <hr />
+                <div class="info__container--card">
+                    <img src="src/icons/laptop.png" alt="laptop icono" class="info__container--card__image"/>
+                    <h3 class="info__container--card__title">Promoción en portales</h3>
+                    <p class="info__container--card__text">Publicamos tu propiedad en los mejores portales.</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
