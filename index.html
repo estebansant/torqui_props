@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contacto.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
     <title>Contacto | Torqui Propiedades</title>
 </head>
 <body>
@@ -12,6 +12,14 @@
         <section class="form__section">
             <!-- Formulario -->
             <form class="form" action="https://formsubmit.co/estebansant30@gmail.com" method="post">
+                <!-- Antispam Honeypot -->
+                <input type="text" name="_honey" style="display: none;" />
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false" />
+
+                <input type="hidden" name="_next" value="https://www.torquipropiedades.com/enviado" />
+                <!-- Contenido -->
                 <div class="form__wrapper">
                     <div class="form__wrapper--container">
                         <h1 class="form__title">CONOCÉ EL VALOR DE TU PROPIEDAD</h1>
@@ -19,28 +27,28 @@
 
                         <!-- Campos del formulario -->
                         <div class="form__container">
-                            <label for="fname" class="form__container--label">
+                            <label for="Nombre" class="form__container--label">
                                 <span class="form__container--label__title">Nombre*</span>
-                                <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre" required class="form__container--label__name"/>
+                                <input type="text" id="Nombre" name="Nombre" placeholder="Introduce tu nombre" required class="form__container--label__name"/>
                             </label>
-                            <label for="lname" class="form__container--label">
+                            <label for="Apellido" class="form__container--label">
                                 <span class="form__container--label__title">Apellido*</span>
-                                <input type="text" id="lname" name="lname" placeholder="Introduce tu apellido" required class="form__container--label__name"/>
+                                <input type="text" id="Apellido" name="Apellido" placeholder="Introduce tu apellido" required class="form__container--label__name"/>
                             </label>
                         </div>
                         <div class="form__container">
-                            <label for="email" class="form__container--label">
+                            <label for="Correo" class="form__container--label">
                                 <span class="form__container--label__title">Email*</span>
-                                <input type="mail" id="email" name="email" placeholder="Introduce tu email" required class="form__container--label__contact"/>
+                                <input type="mail" id="Correo" name="Correo" placeholder="Introduce tu email" required class="form__container--label__contact"/>
                             </label>
-                            <label for="phone" class="form__container--label">
+                            <label for="Telefono" class="form__container--label">
                                 <span class="form__container--label__title">Teléfono*</span>
-                                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required class="form__container--label__contact"/>
+                                <input type="tel" id="Telefono" name="Telefono" placeholder="Teléfono" required class="form__container--label__contact"/>
                             </label>
                         </div>
-                        <label for="message" class="form__container--label2">
+                        <label for="Mensaje" class="form__container--label2">
                             <span class="form__container--label__title">Mensaje*</span>
-                            <textarea id="message" name="message" placeholder="Introduce tu mensaje" required class="form__container--label__message"></textarea>
+                            <textarea id="Mensaje" name="Mensaje" placeholder="Introduce tu mensaje" required class="form__container--label__message"></textarea>
                         </label>
                         <div class="submit__wrapper">
                             <button class="submit" type="submit" name="submit">Enviar</button>
