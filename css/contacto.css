@@ -265,7 +265,7 @@ main {
   .form__subtitle {
     font-size: 1.6rem;
     font-weight: 300;
-    color: rgb(119, 119, 119);
+    color: #9c9c9c;
     margin-bottom: 15px;
   }
   .form__container {
